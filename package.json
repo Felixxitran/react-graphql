@@ -1,0 +1,41 @@
+{
+  "name": "react-graphql-13-hours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc -w",
+    "dev": "nodemon dist/index.js",
+    "start": "nodemon dist/index.js",
+    "start2": "ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Felixxitran/react-graphql-13-hours.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Felixxitran/react-graphql-13-hours/issues"
+  },
+  "homepage": "https://github.com/Felixxitran/react-graphql-13-hours#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.16",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@mikro-orm/cli": "^5.0.0",
+    "@mikro-orm/core": "^5.0.0",
+    "@mikro-orm/migrations": "^5.0.0",
+    "@mikro-orm/postgresql": "^5.0.0",
+    "pg": "^8.7.3"
+  },
+  "mikro-orm": {
+    "useTsNode": true,
+    "configPaths": [
+      "./src/mikro-orm.config.ts",
+      "./dist/mikro-orm.config.js"
+    ]
+  }
+}
